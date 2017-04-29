@@ -30,33 +30,44 @@
           <form class="filter-features" action="#" method="get">
             <div class="filter-infrastructure">
               <h2>Инфраструктура:</h2>
-              <input type="checkbox" name="pool" id="pool-checkbox">
-              <label for="pool-checkbox">Бассейн</label>
-              <br>
-              <input type="checkbox" name="parking" id="parking-checkbox">
-              <label for="parking-checkbox">Парковка</label>
-              <br>
-              <input type="checkbox" name="wifi" id="wifi-checkbox">
-              <label for="wifi-checkbox">Wi-Fi</label>
+              <div class="pool-checkbox input">
+                <input type="checkbox" name="pool" id="pool-checkbox">
+                <label for="pool-checkbox">Бассейн</label>
+              </div>
+              <div class="parking-checkbox input">
+                <input type="checkbox" name="parking" id="parking-checkbox">
+                <label for="parking-checkbox">Парковка</label>
+              </div>
+              <div class="wifi-checkbox input">
+                <input type="checkbox" name="wifi" id="wifi-checkbox">
+                <label for="wifi-checkbox">Wi-Fi</label>
+              </div>
             </div>
             <div class="filter-housetype">
               <h2>Тип жилья:</h2>
-              <input type="checkbox" name="hotel" id="hotel-checkbox">
-              <label for="hotel-checkbox">Гостиница</label>
-              <br>
-              <input type="checkbox" name="motel" id="motel-checkbox">
-              <label for="motel-checkbox">Мотель</label>
-              <br>
-              <input type="checkbox" name="apartments" id="apartments-checkbox">
-              <label for="apartments-checkbox">Апартаменты</label>
+              <div class="hotel-checkbox input">
+                <input type="checkbox" name="hotel" id="hotel-checkbox">
+                <label for="hotel-checkbox">Гостиница</label>
+              </div>
+              <div class="motel-checkbox input">
+                <input type="checkbox" name="motel" id="motel-checkbox">
+                <label for="motel-checkbox">Мотель</label>
+              </div>
+              <div class="apartments-checkbox input">
+                <input type="checkbox" name="apartments" id="apartments-checkbox">
+                <label for="apartments-checkbox">Апартаменты</label>
+              </div>
             </div>
             <div class="filter-price">
               <h2>Стоимость в сутки (Р):</h2>
-              <p class="price-result">
+              <div class="price-result">
                 <span class="price-from">от 0</span>|<span class="price-to">до 3000</span>
-              </p>
-              <label for="price-range"></label>
-              <input type="range" name="price" id="price-range">
+              </div>
+              <div class="price-range input">
+                <label for="price-range"></label>
+                <input type="range" name="price-min" id="price-range">
+                <input type="range" name="price-max">
+              </div>
               <div class="form-btn">
                 <button type="submit">Показать</button>
               </div>
@@ -69,11 +80,21 @@
           <div class="result-sorting">
             <h3>Сортировка:</h3>
             <div class="sorting-by">
-              <div class="sorting-by-price">По цене</div>
-              <div class="sorting-by-housetype">По типу</div>
-              <div class="sorting-by-reting">По рейтингу</div>
-              <div class="sorting-ascending"></div>
-              <div class="sorting-descending"></div>
+              <div class="sorting-by-price">
+                <a href="#">По цене</a>
+              </div>
+              <div class="sorting-by-housetype">
+                <a href="#">По типу</a>
+              </div>
+              <div class="sorting-by-reting">
+                <a href="#">По рейтингу</a>
+              </div>
+              <div class="sorting-ascending">
+                <a href="#">По возрастанию</a>
+              </div>
+              <div class="sorting-descending">
+                <a href="#">По убыванию</a>
+              </div>
             </div>
           </div>
           <div class="result-list">
@@ -170,9 +191,9 @@
           #VisitSedona
         </div>
         <ul class="social">
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">YouTube</a></li>
+          <li><a class="social-btn-twitter" href="#">Twitter</a></li>
+          <li><a class="social-btn-facebook" href="#">Facebook</a></li>
+          <li><a class="social-btn-youtube" href="#">YouTube</a></li>
         </ul>
         <div class="developer-contacts">
           <p>

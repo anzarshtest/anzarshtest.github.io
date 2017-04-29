@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta h2="utf-8">
     <title>Седона</title>
     <!--<link rel="stylesheet" href="css/style.css">-->
   </head>
@@ -85,23 +85,26 @@
           <!-- форма поиска -->
           <form class="hotel-reservation" action="#" method="get">
             <h2 class="hotel-header">Поиск гостиницы в Седоне</h2>
-            <label for="date-arrival">Дата заезда</label>
-            <input type="text" name="arrival" id="date-arrival" value="24 апреля 2017">
-            <img src="img/form-calendar.png" alt="calendar">
-            <br>
-            <label for="date-departure">Дата выезда</label>
-            <input type="text" name="departure" id="date-departure" value="4 июля 2017">
-            <img src="img/form-calendar.png" alt="calendar">
-            <br>
-            <label for="adults-number">Взрослые</label>
-            <img src="img/form-minus.png" alt="minus">
-            <input type="text" name="adults" id="adults-number" value="2">
-            <img src="img/form-plus.png" alt="plus">
-            <label for="children-number">Дети</label>
-            <img src="img/form-minus.png" alt="minus">
-            <input type="text" name="children" id="children-number" value="0">
-            <img src="img/form-plus.png" alt="plus">
-            <br>
+            <div class="date-arrival input">
+              <label for="date-arrival">Дата заезда</label>
+              <input type="text" name="arrival" id="date-arrival" value="24 апреля 2017">
+            </div>
+            <div class="date-departure input">
+              <label for="date-departure">Дата выезда</label>
+              <input type="text" name="departure" id="date-departure" value="4 июля 2017">
+            </div>
+            <div class="adults-number input">
+              <label for="adults-number">Взрослые</label>
+              <img src="img/form-minus.png" alt="minus">
+              <input type="text" name="adults" id="adults-number" value="2">
+              <img src="img/form-plus.png" alt="plus">
+            </div>
+            <div class="children-number input">
+              <label for="children-number">Дети</label>
+              <img src="img/form-minus.png" alt="minus">
+              <input type="text" name="children" id="children-number" value="0">
+              <img src="img/form-plus.png" alt="plus">
+            </div>
             <div class="form-btn">
               <button type="submit">Найти</button>
             </div>
@@ -116,9 +119,9 @@
           #VisitSedona
         </div>
         <ul class="social">
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">YouTube</a></li>
+          <li><a class="social-btn-twitter" href="#">Twitter</a></li>
+          <li><a class="social-btn-facebook" href="#">Facebook</a></li>
+          <li><a class="social-btn-youtube" href="#">YouTube</a></li>
         </ul>
         <div class="developer-contacts">
           <p>
